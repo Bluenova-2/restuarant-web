@@ -1,0 +1,50 @@
+body{margin:0;font-family:Poppins;background:#0f0f0f;color:white;}
+
+/* NAV */
+.nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 2rem;background:#111;}
+.logo{color:#ff7a00;}
+.nav-links{display:flex;gap:20px;}
+.nav-links a{color:white;text-decoration:none;}
+.login-btn{background:#ff7a00;border:none;padding:6px 12px;color:white;border-radius:6px;}
+.hamburger{display:none;flex-direction:column;cursor:pointer;}
+.hamburger div{width:25px;height:3px;background:white;margin:4px;}
+
+/* HERO */
+.hero{height:90vh;display:flex;align-items:center;justify-content:center;}
+.home-bg{background:url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092') center/cover;}
+.overlay{background:rgba(0,0,0,0.6);padding:2rem;border-radius:12px;text-align:center;}
+
+/* SECTIONS */
+.section{display:flex;gap:20px;padding:2rem;}
+.card{flex:1;background:#1c1c1c;padding:2rem;border-radius:12px;transition:.3s;}
+.card:hover{transform:translateY(-10px);}
+
+.feature-strip{display:flex;justify-content:space-around;padding:1rem;background:#111;}
+.feature{padding:10px 20px;background:#1c1c1c;border-radius:8px;}
+
+.cta-section{text-align:center;padding:3rem;}
+.cta{background:#ff7a00;border:none;padding:12px 20px;color:white;border-radius:6px;}
+
+/* LOGIN */
+.login-page{height:100vh;background:url('https://images.unsplash.com/photo-1498654896293-37aacf113fd9') center/cover;}
+.login-overlay{height:100%;display:flex;justify-content:center;align-items:center;background:rgba(0,0,0,0.7);}
+.login-box{background:#111;padding:2rem;border-radius:12px;display:flex;flex-direction:column;gap:10px;width:320px;box-shadow:0 0 30px rgba(0,0,0,0.6);}
+
+/* FOOTER */
+.footer{background:#111;padding:2rem;}
+.footer-grid{display:flex;justify-content:space-between;}
+
+/* FORM */
+.form{display:flex;flex-direction:column;gap:10px;}
+
+/* ANIMATIONS */
+.reveal{opacity:0;transform:translateY(40px);transition:.8s;}
+.reveal.show{opacity:1;transform:translateY(0);}
+
+/* MOBILE */
+@media(max-width:768px){
+.nav-links{display:none;position:absolute;top:60px;right:0;background:#111;flex-direction:column;width:200px;}
+.nav-links.active{display:flex;}
+.hamburger{display:flex;}
+.section{flex-direction:column;}
+}
